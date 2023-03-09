@@ -5,7 +5,7 @@
 }
 
 :root{
-    
+    --bg-button: rgb(74, 74, 74);
 }
 
 body{
@@ -13,20 +13,46 @@ body{
     color: white;
 }
 
+i{
+    font-size: 30px;
+}
+
+.sez-gestore-riunione{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.casella-e-freccia{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bi-caret-up-fill{
+    font-size: 15px;
+}
+
 #gestore-cam{
     display: flex;
     justify-content: end;
     flex-direction: row;
-    margin-top: 0.5em;
+    padding-top: 0.5em;
     position: fixed;
     width: 100%;
 }
 
 #gestore-cam span{
-    background-color: rgb(74, 74, 74);
     padding: 0.5em;
     border-radius: 0.5em;
     margin-right: 5px;
+    background-color: var(--bg-button);
 }
 
 #cam{
@@ -34,5 +60,20 @@ body{
 }
 
 #gestore-riunione{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
 
+#gestore-riunione div{
+    padding: 0.2em;
+}
+
+#chiusura-chiamata{
+    background-color: var(--bg-button);
+    color: red;
 }
