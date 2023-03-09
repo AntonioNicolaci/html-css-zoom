@@ -9,5 +9,30 @@
 }
 
 body{
-    background-color: red;
+    background-color: black;
+    color: white;
+}
+
+#gestore-cam{
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    margin-top: 0.5em;
+    position: fixed;
+    width: 100%;
+}
+
+#gestore-cam span{
+    background-color: rgb(74, 74, 74);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin-right: 5px;
+}
+
+#cam{
+
+}
+
+#gestore-riunione{
+
 }
